@@ -7,6 +7,7 @@ require("lazy").setup({
     require("plugins.lualine"),
     require("plugins.alpha"),
     require("plugins.indent"),
+    require("plugins.bufferline"),
   },
   install = { colorscheme = { "kanagawa" } },
   checker = { enabled = false },

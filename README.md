@@ -50,13 +50,13 @@ Lazy.nvim will automatically install all required plugins.
 
 ## Keybindings
 
-| Keys      | Action               |
-| --------- | -------------------- |
-| `<Space>` | Leader key           |
-| `<C-f>`   | Telescope find files |
-| `<C-b>`   | Telescope buffers    |
-| `<C-g>`   | Telescope live grep  |
-| `<C-n>`   | Toggle Nvim-tree     |
+| Keys        | Action               |
+| ----------- | -------------------- |
+| `<Space>`   | Leader key           |
+| `<C-f>`     | Telescope find files |
+| `<C-b>`     | Telescope buffers    |
+| `<C-g>`     | Telescope live grep  |
+| `<Leader>e` | Toggle Nvim-tree     |
 
 ### Dashboard Buttons
 
