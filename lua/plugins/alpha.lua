@@ -15,7 +15,7 @@ return {
                 "╚══╝    ╚═╝  ╚═╝╚═╝      ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝    ╚══╝",}
     dashboard.section.buttons.val = {
       dashboard.button("r", " Recent files", ":Telescope oldfiles<CR>"),
-      dashboard.button("f", " Open file from drive", ":lua require('config.drive').select_drive_popup()<CR>"),
+      dashboard.button("f", " Open file", ":lua require('config.drive').select_drive_popup()<CR>"),
       dashboard.button("e", " New file", ":ene<CR>"),
       dashboard.button("q", " Quit", ":qa<CR>"),
     }
