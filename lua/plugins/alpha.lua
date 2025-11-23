@@ -22,6 +22,7 @@ return {
       dashboard.button("f", " Open file", ":lua require('config.drive').select_drive_popup()<CR>"),
       dashboard.button("n", " New file", ":ene<CR>"),
       dashboard.button("l", " Open Lazy", ":Lazy<CR>"),
+      dashboard.button("m", " Open Mason", ":Mason<CR>"),
       dashboard.button("c", " Open Config", ":Telescope find_files cwd=" .. home .. "<CR>"),  -- NEW
       dashboard.button("q", " Quit", ":qa<CR>"),
     }

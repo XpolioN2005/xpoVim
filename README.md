@@ -1,6 +1,6 @@
 # XPOVIM
 
-<img src = "assets/index.png">
+<img src="assets/index.png">
 
 <p align="center">
   <a href="https://neovim.io/"><img src="https://img.shields.io/badge/Neovim-0.8%2B-blue" alt="Neovim"></a>
@@ -9,7 +9,6 @@
   <br>
   <a href="https://github.com/XpolioN2005/XPOVIM/stargazers"><img src="https://img.shields.io/github/stars/XpolioN2005/XPOVIM?style=social" alt="Stars"></a>
   <a href="https://github.com/XpolioN2005/XPOVIM/network/members"><img src="https://img.shields.io/github/forks/XpolioN2005/XPOVIM?style=social" alt="Forks"></a>
-  
 </p>
 
 **XPOVIM** is a modern, fast, and highly customizable Neovim configuration for developers, combining an aesthetic UI, powerful navigation, and drive-based file browsing.
@@ -22,7 +21,7 @@
 - **Drive selection popup** integrated with [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 - **Fuzzy file search**: find files, buffers, and live grep
 - **Syntax highlighting & smart indentation** via [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-- **File explorer** with icons and git highlights via [Nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
+- **Minimal LSP setup** with rename, hover, code actions, and diagnostics
 - **Customizable statusline** with [Lualine](https://github.com/nvim-lualine/lualine.nvim)
 - **Indent guides** via [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 - **Kanagawa colorscheme** for focus and readability
@@ -50,22 +49,31 @@ Lazy.nvim will automatically install all required plugins.
 
 ## Keybindings
 
-| Keys        | Action               |
-| ----------- | -------------------- |
-| `<Space>`   | Leader key           |
-| `<C-f>`     | Telescope find files |
-| `<C-b>`     | Telescope buffers    |
-| `<C-g>`     | Telescope live grep  |
-| `<Leader>e` | Toggle Nvim-tree     |
+| Keys                  | Action               |
+| --------------------- | -------------------- |
+| `<Space>`             | Leader key           |
+| `<C-f>`               | Telescope find files |
+| `<C-b>`               | Telescope buffers    |
+| `<C-g>`               | Telescope live grep  |
+| `<leader>e`           | File explorar        |
+| `<leader>r`           | LSP Rename           |
+| `K`                   | LSP Hover            |
+| `<C-k>`               | LSP Signature Help   |
+| `<leader>ca` (normal) | LSP Code Actions     |
+
+---
 
 ### Dashboard Buttons
 
-| Key | Action               |
-| --- | -------------------- |
-| r   | Recent files         |
-| f   | Open file from drive |
-| e   | New file             |
-| q   | Quit Neovim          |
+| Key | Action       |
+| --- | ------------ |
+| r   | Recent files |
+| f   | Open file    |
+| n   | New file     |
+| l   | Open Lazy    |
+| m   | Open Mason   |
+| c   | Open config  |
+| q   | Quit Neovim  |
 
 ---
 
@@ -80,7 +88,7 @@ Lazy.nvim will automatically install all required plugins.
 ## Customization
 
 - Edit `~/.config/nvim/lua/config/drive.lua` to modify available drives.
-- Edit `~/.config/nvim/init.lua` to change plugin settings, keybindings, and colorscheme.
+- Edit `~/.config/nvim/init.lua` to change plugin settings, keybindings, colorscheme, and LSP behavior.
 
 ---
 

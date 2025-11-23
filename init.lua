@@ -12,4 +12,7 @@ vim.opt.rtp:prepend(lazypath)
 -- Load settings and plugins
 require("core.options")
 require("core.keymaps")
-require("plugins")
+require("lazy").setup("plugins", {
+  install = { colorscheme = { "kanagawa" } },
+  checker = { enabled = false },
+})
