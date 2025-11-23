@@ -1,3 +1,6 @@
+
+# this file is used t0 chek how it looks in editor
+
 import time
 
 print("yoo")
