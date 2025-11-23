@@ -14,6 +14,7 @@ return {
       "██║      ██╔██╗ ██╔═══╝ ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║     ██║",
       "███╗    ██╔╝ ██╗██║     ╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║    ███║",
       "╚══╝    ╚═╝  ╚═╝╚═╝      ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝    ╚══╝",
+      "                                                         v1.0.1 ",
     }
 
     -- Buttons
@@ -23,7 +24,7 @@ return {
       dashboard.button("n", " New file", ":ene<CR>"),
       dashboard.button("l", " Open Lazy", ":Lazy<CR>"),
       dashboard.button("m", " Open Mason", ":Mason<CR>"),
-      dashboard.button("c", " Open Config", ":Telescope find_files cwd=" .. home .. "<CR>"),  -- NEW
+      dashboard.button("c", " Open Config", ":Telescope find_files cwd=" .. home .. "<CR>"),
       dashboard.button("q", " Quit", ":qa<CR>"),
     }
 
